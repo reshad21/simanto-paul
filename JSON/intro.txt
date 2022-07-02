@@ -1,0 +1,8 @@
+JSON = JAVASCRIPT OBJECT NOTATION
+
+
+javascript object data:
+{ name : "reshad", phn : "0178770634", email : "miakala7@gmail.com" }
+
+JSON DATA: 
+{ "name" : "reshad", "phn" : "0178770634", "email" : "miakala7@gmail.com" }

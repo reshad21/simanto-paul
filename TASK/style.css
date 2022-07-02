@@ -1,0 +1,10 @@
+.cross_icon_design {
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
