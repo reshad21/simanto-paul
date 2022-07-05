@@ -20,11 +20,16 @@
     </div>
 
     <script>
-      fetch("http://www.boredapi.com/api/activity/")
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data.activity);
-        });
+      function findtask() {
+        fetch("http://www.boredapi.com/api/activity/")
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data.activity);
+            document.getElementById("activity").innerText = `${data.activity}`;
+          });
+      }
+
+      setInterval(findtask, 5000);
     </script>
   </body>
 </html>
