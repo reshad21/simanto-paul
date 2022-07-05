@@ -20,6 +20,7 @@
     </div>
 
     <script>
+      // bord api calling in this fetch
       function findtask() {
         fetch("http://www.boredapi.com/api/activity/")
           .then((res) => res.json())
@@ -29,7 +30,7 @@
           });
       }
 
-      setInterval(findtask, 5000);
+      //setInterval(findtask, 5000);
     </script>
   </body>
 </html>
