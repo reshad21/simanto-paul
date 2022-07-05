@@ -47,8 +47,13 @@
           const username = document.querySelector("#username");
           username.innerHTML = `Name: ${user.name.title} ${user.name.first} ${user.name.last}`;
 
+          let realage = `${data.results[0].registered.age + 10}`;
+          //   if (realage <= 1) {
+          //     realage = `${data.results[0].registered.age + 15}`;
+          //   }
           const userage = document.querySelector("#userage");
-          userage.innerHTML = `Registration Hour: ${data.results[0].registered.age}`;
+          //userage.innerHTML = `Registration Hour: ${data.results[0].registered.age}`;
+          userage.innerHTML = `Registration Hour: ${realage}`;
         })
         .catch((error) => {
           console.log(error);
