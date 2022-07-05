@@ -17,6 +17,7 @@
     <div class="container">
       <img src="" alt="" id="userimg" />
       <h6 id="username"></h6>
+      <h6><span id="userage"></span></h6>
     </div>
     <script>
       fetch("https://randomuser.me/api/")
@@ -44,7 +45,10 @@
           userimg.src = `${user.picture.large}`;
 
           const username = document.querySelector("#username");
-          username.innerHTML = `${user.name.title} ${user.name.first} ${user.name.last}`;
+          username.innerHTML = `Name: ${user.name.title} ${user.name.first} ${user.name.last}`;
+
+          const userage = document.querySelector("#userage");
+          userage.innerHTML = `Registration Hour: ${data.results[0].registered.age}`;
         })
         .catch((error) => {
           console.log(error);
