@@ -1,16 +1,26 @@
-fetch("https://jsonplaceholder.typicode.com/users")
-  .then((res) => res.json())
-  .then((data) => {
-    // console.log(data);
-    let users = data;
-    for (let i = 0; i < users.length; i++) {
-      const item = users[i];
-      let list = document.createElement("p");
-      list.innerHTML = `Name : ${item.name} <button onclick = "getinfo(${item.id})">more details- ${item.id}</button>`;
+let submit = document.querySelector("#submit");
+let usernumber = document.querySelector('#user-number');
+submit.addEventListener('click',function(e){
+  e.preventDefault();
+  let count = parseInt(usernumber.value);
+
+  fetch("https://jsonplaceholder.typicode.com/users/")
+    .then((res) => res.json())
+    .then((data) => {
+      let users = data.slice(0,count);
       const wrapper = document.querySelector("#wrapper");
-      wrapper.appendChild(list);
-    }
-  });
+      wrapper.innerHTML="";
+      for (let i = 0; i < users.length; i++) {
+        const item = users[i];
+        let list = document.createElement("p");
+        list.innerHTML = `Name : ${item.name} <button onclick = "getinfo(${item.id})">more details- ${item.id}</button>`;
+        wrapper.appendChild(list);
+      }
+    });
+    
+  usernumber.value="";
+})
+
 
 function getinfo(userid) {
   fetch(`https://jsonplaceholder.typicode.com/users/${userid}`)
@@ -21,6 +31,5 @@ function getinfo(userid) {
       <h4>phone = ${data.phone}</h4>
       <h4>website = ${data.website}</h4>
       `;
-      // console.log(data);
     });
 }
