@@ -27,9 +27,9 @@ function getinfo(userid) {
     .then((res) => res.json())
     .then((data) => {
       document.querySelector(".single-userdata").innerHTML = `
-      <h4>username = ${data.username}</h4>
-      <h4>phone = ${data.phone}</h4>
-      <h4>website = ${data.website}</h4>
+      <p>username : ${data.username}</p>
+      <p>phone : ${data.phone}</p>
+      <p>website : ${data.website}</p>
       `;
     });
 }
