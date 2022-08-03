@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .popup_window {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 300px;
+        width: 900px;
+        box-shadow: 1px 2px 3px #ddd;
+        background-color: salmon;
+      }
+      .popup_window.active {
+        display: block;
+      }
+      body.active {
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <button><a href="#" id="toggle">Click here</a></button>
+    <div class="popup_window" id="popup">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        maiores repellendus vero rem ipsam voluptatum modi officiis atque
+        ducimus aliquid, est mollitia ullam consequatur deleniti quibusdam
+        praesentium repellat. Qui neque voluptatum nulla molestias minus alias
+        non beatae facilis animi, ullam architecto exercitationem, dignissimos
+        adipisci facere! Cum consectetur vitae animi maiores!
+      </p>
+    </div>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia eius sed
+      quidem est possimus molestias ipsam accusantium laboriosam delectus
+      recusandae dolorum temporibus, exercitationem laudantium architecto. Neque
+      temporibus unde quisquam corrupti porro placeat expedita, minima cum earum
+      iure aperiam possimus itaque deserunt veniam reprehenderit repellendus
+      magni sequi voluptate exercitationem fuga. Voluptate cum error architecto
+      vero tempora natus pariatur dignissimos, et cupiditate nam reprehenderit
+      repudiandae incidunt molestias officia, accusamus totam! Fugit quo alias
+      quis magnam. Id optio vero nihil quidem non alias inventore nam, eos autem
+      corrupti voluptatum maiores! Aspernatur vitae, fugiat odio aut quae unde
+      veritatis! Commodi illo quam ex officiis!
+    </h1>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia eius sed
+      quidem est possimus molestias ipsam accusantium laboriosam delectus
+      recusandae dolorum temporibus, exercitationem laudantium architecto. Neque
+      temporibus unde quisquam corrupti porro placeat expedita, minima cum earum
+      iure aperiam possimus itaque deserunt veniam reprehenderit repellendus
+      magni sequi voluptate exercitationem fuga. Voluptate cum error architecto
+      vero tempora natus pariatur dignissimos, et cupiditate nam reprehenderit
+      repudiandae incidunt molestias officia, accusamus totam! Fugit quo alias
+      quis magnam. Id optio vero nihil quidem non alias inventore nam, eos autem
+      corrupti voluptatum maiores! Aspernatur vitae, fugiat odio aut quae unde
+      veritatis! Commodi illo quam ex officiis!
+    </h1>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia eius sed
+      quidem est possimus molestias ipsam accusantium laboriosam delectus
+      recusandae dolorum temporibus, exercitationem laudantium architecto. Neque
+      temporibus unde quisquam corrupti porro placeat expedita, minima cum earum
+      iure aperiam possimus itaque deserunt veniam reprehenderit repellendus
+      magni sequi voluptate exercitationem fuga. Voluptate cum error architecto
+      vero tempora natus pariatur dignissimos, et cupiditate nam reprehenderit
+      repudiandae incidunt molestias officia, accusamus totam! Fugit quo alias
+      quis magnam. Id optio vero nihil quidem non alias inventore nam, eos autem
+      corrupti voluptatum maiores! Aspernatur vitae, fugiat odio aut quae unde
+      veritatis! Commodi illo quam ex officiis!
+    </h1>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia eius sed
+      quidem est possimus molestias ipsam accusantium laboriosam delectus
+      recusandae dolorum temporibus, exercitationem laudantium architecto. Neque
+      temporibus unde quisquam corrupti porro placeat expedita, minima cum earum
+      iure aperiam possimus itaque deserunt veniam reprehenderit repellendus
+      magni sequi voluptate exercitationem fuga. Voluptate cum error architecto
+      vero tempora natus pariatur dignissimos, et cupiditate nam reprehenderit
+      repudiandae incidunt molestias officia, accusamus totam! Fugit quo alias
+      quis magnam. Id optio vero nihil quidem non alias inventore nam, eos autem
+      corrupti voluptatum maiores! Aspernatur vitae, fugiat odio aut quae unde
+      veritatis! Commodi illo quam ex officiis!
+    </h1>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia eius sed
+      quidem est possimus molestias ipsam accusantium laboriosam delectus
+      recusandae dolorum temporibus, exercitationem laudantium architecto. Neque
+      temporibus unde quisquam corrupti porro placeat expedita, minima cum earum
+      iure aperiam possimus itaque deserunt veniam reprehenderit repellendus
+      magni sequi voluptate exercitationem fuga. Voluptate cum error architecto
+      vero tempora natus pariatur dignissimos, et cupiditate nam reprehenderit
+      repudiandae incidunt molestias officia, accusamus totam! Fugit quo alias
+      quis magnam. Id optio vero nihil quidem non alias inventore nam, eos autem
+      corrupti voluptatum maiores! Aspernatur vitae, fugiat odio aut quae unde
+      veritatis! Commodi illo quam ex officiis!
+    </h1>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia eius sed
+      quidem est possimus molestias ipsam accusantium laboriosam delectus
+      recusandae dolorum temporibus, exercitationem laudantium architecto. Neque
+      temporibus unde quisquam corrupti porro placeat expedita, minima cum earum
+      iure aperiam possimus itaque deserunt veniam reprehenderit repellendus
+      magni sequi voluptate exercitationem fuga. Voluptate cum error architecto
+      vero tempora natus pariatur dignissimos, et cupiditate nam reprehenderit
+      repudiandae incidunt molestias officia, accusamus totam! Fugit quo alias
+      quis magnam. Id optio vero nihil quidem non alias inventore nam, eos autem
+      corrupti voluptatum maiores! Aspernatur vitae, fugiat odio aut quae unde
+      veritatis! Commodi illo quam ex officiis!
+    </h1>
+    <h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia eius sed
+      quidem est possimus molestias ipsam accusantium laboriosam delectus
+      recusandae dolorum temporibus, exercitationem laudantium architecto. Neque
+      temporibus unde quisquam corrupti porro placeat expedita, minima cum earum
+      iure aperiam possimus itaque deserunt veniam reprehenderit repellendus
+      magni sequi voluptate exercitationem fuga. Voluptate cum error architecto
+      vero tempora natus pariatur dignissimos, et cupiditate nam reprehenderit
+      repudiandae incidunt molestias officia, accusamus totam! Fugit quo alias
+      quis magnam. Id optio vero nihil quidem non alias inventore nam, eos autem
+      corrupti voluptatum maiores! Aspernatur vitae, fugiat odio aut quae unde
+      veritatis! Commodi illo quam ex officiis!
+    </h1>
+    <script src="index.js"></script>
+  </body>
+</html>
