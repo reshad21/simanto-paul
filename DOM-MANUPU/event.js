@@ -1,7 +1,7 @@
 let btn = document.getElementById('btn');
 
 btn.addEventListener('click',function(e){
-    let val = e;
+    let val = e; // aknae e akta object jar onek gula property ace
     val = this; //e ar ja kaj this aro thick same kaj.this current ja elemment niya kaj kori takei bojay
     val = e.target; 
     val = e.target.id;
