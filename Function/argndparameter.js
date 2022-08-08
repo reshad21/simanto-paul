@@ -20,5 +20,5 @@ function getsingara(money) {
     return quentity;
 }
 
-var plate = getsingara(30);
+var plate = getsingara(300);
 console.log(plate);
