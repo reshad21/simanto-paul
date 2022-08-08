@@ -8,10 +8,7 @@ function totalCost(shoppingCart){
     let sum = 0;
     for (let i = 0; i < shoppingCart.length; i++) {
         const element = shoppingCart[i];
-        let shirtprice = element.price * element.quentity;
-        let pantprice = element.price * element.quentity;
-        let beltprice = element.price * element.quentity;
-        let totalPrice = shirtprice + pantprice + beltprice;
+        let totalPrice = element.price * element.quentity;
         sum = sum + totalPrice;
     }
     return sum;
