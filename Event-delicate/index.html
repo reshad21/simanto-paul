@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list-container{
+            background-color: saddlebrown;
+        }
+        .list-item{
+            border: 2px solid tomato;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <ul id="list-container">
+            <li class="list-item">Lorem, ipsum dolor.</li>
+            <li class="list-item">Similique, nobis minus.</li>
+            <li class="list-item">Dignissimos, beatae pariatur!</li>
+            <li class="list-item">Aliquid, unde dolor.</li>
+            <li class="list-item">Placeat, obcaecati quo?</li>
+        </ul>
+        <button id="add-items">Add Items</button>
+    </div>
+    <script>
+        // const listitems = document.getElementsByClassName('list-item');
+        // for (const item of listitems) {
+        //     item.addEventListener('click',function(e){
+        //         // console.log(item);
+        //         // console.log(e);
+        //         console.log(e.target.parentNode.removeChild(e.target));
+        //     })
+        // }
+
+
+            // number one system but it is not proper way
+        // document.getElementById('add-items').addEventListener('click',function(){
+        //     let li = document.createElement('li');
+        //     li.classList.add('list-item');
+        //     li.innerText = "Brand new item added";
+        //     const listContainer = document.getElementById('list-container');
+        //     listContainer.appendChild(li);
+
+        //     for (const item of listitems) {
+        //     item.addEventListener('click',function(e){
+        //         console.log(e.target.parentNode.removeChild(e.target));
+        //         })
+        //     }
+        // })
+
+        // --------- now we use the concept of event deligation ---------- //
+        // event child ka aiber na diya parent ka diya deya hoice
+        document.getElementById('list-container').addEventListener('click',function(e){
+            e.target.parentNode.removeChild(e.target);
+        })
+                
+        document.getElementById('add-items').addEventListener('click',function(e){
+            let li = document.createElement('li');
+            li.innerText = "Brand new items added";
+            li.classList.add('list-item');
+
+            let listContainer = document.getElementById('list-container');
+            listContainer.appendChild(li);
+        
+        })
+    </script>
+</body>
+</html>
